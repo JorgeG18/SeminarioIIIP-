@@ -12,12 +12,3 @@ export const Nav= styled.nav`
     top: 0;
     width: 100%;
 `
-export const Button = styled.button`
-    margin-right: 50px;
-    margin-left: 10px;
-    border: 1px #fff;
-    border-radius: 8px;
-    cursor: pointer;
-
-
-`

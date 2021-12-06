@@ -2,7 +2,7 @@ import { Articulo } from "../Articulo";
 import {useRef, useEffect, useState } from 'react';
 //import styles from './estilos'
 import { UseContext } from "../Contextcreate";
-import {Container, Search} from './styles'
+import {Container, Search, Input, Button} from './styles'
 
 
 export const Articulos = (props) => {
@@ -30,12 +30,10 @@ export const Articulos = (props) => {
 
     return (
         <Search>
-            <input type={"search"} name='buscador' ref={searchP}/>
-            <button onClick={handleSearch}>Buscador </button>
+                <Input type={"search"} name='buscador' ref={searchP}/>
+                <Button onClick={handleSearch}>Buscar </Button>
                 <Container>
-                        
-                        {
-                            
+                        { 
                             productos.map(prod => 
                                 // <Articulo nombre={prod.nombre} precio={prod.precio} imagen={prod.imagen} />
                                 <Articulo key={prod.id} prod={prod} agregarAlCarro={agregarAlCarro} />
