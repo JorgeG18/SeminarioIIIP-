@@ -6,10 +6,18 @@ export const Nav= styled.nav`
     box-sizing: border-box;
     color: #fff;
     display: flex;
-    justify-content: space-between;
-    padding: 2px 20px;
+    justify-content: right;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+`
+export const Button = styled.button`
+    margin-right: 50px;
+    margin-left: 10px;
+    border: 1px #fff;
+    border-radius: 8px;
+    cursor: pointer;
+
 
 `

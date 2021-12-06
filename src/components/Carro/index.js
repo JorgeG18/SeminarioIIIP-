@@ -24,8 +24,8 @@ export const Carro = ({ cantidad, productos }) => {
 
         productos.forEach((prod, index, obj) => {
             
-            if(prod.id === x.id){
-                let confirmEliminar = window.confirm(`Desea eliminar el producto ${prod.nombre} del carrito`) //Recordatorio: Agregar la confirmación
+            if(prod.id === x.id){//Recordatorio: Agregar la confirmación
+                let confirmEliminar = window.confirm(`Desea eliminar el producto ${prod.nombre} del carrito`) 
                     if(confirmEliminar) obj.splice(index, 1)
             }
 

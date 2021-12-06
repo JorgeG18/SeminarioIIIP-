@@ -36,13 +36,11 @@ function App() {
     setData({...data})
   }
 
-  // App > Navbar > Carro > Burbuja > Numero de productos
-
-  // let cantidad = data.carrito.length
+  
   let cantidad = data.carrito.reduce((acum, actual) => acum + actual.cantidad, 0)
 
-  return (
-    <Fragment>
+  return ( //Recordatorio: Cambiar a UseContext
+    <Fragment> 
       
       <Navbar cantidad={cantidad} productos={data.carrito} />
       <Articulos agregarAlCarro={agregarAlCarro} data={data} />
