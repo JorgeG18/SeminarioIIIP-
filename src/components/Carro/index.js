@@ -22,14 +22,13 @@ export const Carro = ({ cantidad, productos }) => {
 
     const handleBorrarProduct = (x) =>{
 
-        productos.map((prod, index, obj) => {
+        productos.forEach((prod, index, obj) => {
             
             if(prod.id === x.id){
-                obj.splice(index, 1)
-                alert('Confirmar') //Recordatorio: Agregar la confirmación
-
+                let confirmEliminar = window.confirm(`Desea eliminar el producto ${prod.nombre} del carrito`) //Recordatorio: Agregar la confirmación
+                    if(confirmEliminar) obj.splice(index, 1)
             }
-            return prod
+
         })
         setRenderizar(!renderizar)
     }
