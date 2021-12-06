@@ -1,6 +1,7 @@
 import {  Fragment, useState } from 'react'
 import { Articulos } from "./components/Articulos"
 import { Navbar } from './components/Navbar'
+import {UseContext} from './components/Contextcreate'
 
 // base de datos
 const informacion = {
